@@ -37,9 +37,14 @@ internal class ContinueByRectangle : IContinueByFigure
                 {
                     throw new FormatException("Invalid height");
                 }
+                if (!float.IsFinite(height))
+                {
+                    throw new InvalidOperationException("Invalid height");
+                }
+                
                 return height;
             }
-            catch (FormatException e)
+            catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }
@@ -57,9 +62,14 @@ internal class ContinueByRectangle : IContinueByFigure
                 {
                     throw new FormatException("Invalid base");
                 }
+                if (!float.IsFinite(@base))
+                {
+                    throw new InvalidOperationException("Invalid base");
+                }
+                
                 return @base;
             }
-            catch (FormatException e)
+            catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }

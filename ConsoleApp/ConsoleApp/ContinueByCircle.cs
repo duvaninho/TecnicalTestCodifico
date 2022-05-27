@@ -19,12 +19,19 @@ internal class ContinueByCircle : IContinueByFigure
             Console.Write("Enter radius: ");
             try
             {
-                var radius = double.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
+                if (!float.TryParse(Console.ReadLine(), out var radius))
+                {
+                    throw new FormatException("Invalid radius");
+                }
+                if (!float.IsFinite(radius))
+                {
+                    throw new InvalidOperationException("Invalid radius");
+                }
                 return radius;
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                Console.WriteLine("Invalid radius");
+                Console.WriteLine(e.Message);
             }
         }
     }
