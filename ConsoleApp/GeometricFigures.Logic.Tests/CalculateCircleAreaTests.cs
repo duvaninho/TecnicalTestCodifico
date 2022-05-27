@@ -30,9 +30,7 @@ public class CalculateCircleAreaTests
     [TestCaseSource(nameof(_expectedMessages))]
     public void CalculateAreaWhereInvalidArgument(double radius, string messageExpected)
     {
-        var circle = GivenCircleWithRadius(radius);
-
-        var ex = Assert.Catch(() => WhenCalculatingCircleArea(circle));
+        var ex = Assert.Catch(() =>GivenCircleWithRadius(radius));
 
         ThenErrorMessageShouldBeLikeExepected(messageExpected, ex);
     }
