@@ -4,14 +4,14 @@ namespace GeometricFigures.Logic.Tests
 {
     public class CalculateRectangleAreaTests
     {
-        [TestCase(10,10, 100)]
-        [TestCase(20,3, 60)]
-        [TestCase(3,6, 18)]
-        public void CalculateRectangleArea(double @base,double height, double areaExpected)
+        [TestCase(10, 10, 100)]
+        [TestCase(20, 3, 60)]
+        [TestCase(3, 6, 18)]
+        public void CalculateRectangleArea(double @base, double height, double areaExpected)
         {
-            var circle = GivenRectangleWithBase(@base,height);
+            var rectangle = GivenRectangleWithBaseAndHeight(@base, height);
 
-            var area = WhenCalculatingRectangleArea(circle);
+            var area = WhenCalculatingRectangleArea(rectangle);
 
             ThenAreaMustBeLikeExpected(areaExpected, area);
         }
@@ -20,17 +20,17 @@ namespace GeometricFigures.Logic.Tests
         {
             new object[]
             {
-                -1d,2d, DomainConstants.MessageWhenNegativeRectangleParameters
+                -1d, 2d, DomainConstants.MessageWhenNegativeRectangleParameters
             },
             new object[]
             {
-                0d,3d, DomainConstants.MessageWhenZeroRectangleParameters
+                0d, 3d, DomainConstants.MessageWhenZeroRectangleParameters
             },
         };
         [TestCaseSource(nameof(_expectedMessages))]
-        public void CalculateAreaWhereInvalidArgument(double @base,double height, string messageExpected)
+        public void CalculateAreaWhereInvalidArgument(double @base, double height, string messageExpected)
         {
-            var ex = Assert.Catch(() => GivenRectangleWithBase(@base,height));
+            var ex = Assert.Catch(() => GivenRectangleWithBaseAndHeight(@base, height));
 
             ThenErrorMessageShouldBeLikeExpected(messageExpected, ex);
         }
@@ -50,9 +50,9 @@ namespace GeometricFigures.Logic.Tests
         {
             return circle.CalculateArea();
         }
-        private static IFigure GivenRectangleWithBase(double @base,double height)
+        private static IFigure GivenRectangleWithBaseAndHeight(double @base, double height)
         {
-            return new Rectangle(@base,height);
+            return new Rectangle(@base, height);
         }
     }
 }
