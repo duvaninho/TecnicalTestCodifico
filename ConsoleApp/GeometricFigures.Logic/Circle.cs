@@ -2,11 +2,12 @@
 
 public class Circle : IFigure
 {
-    public Circle(decimal radius)
+    public double Radius { get; private set; }
+    public Circle(double radius)
     {
         throw new NotImplementedException();
     }
-    public decimal CalculateArea()
+    public double CalculateArea()
     {
         throw new NotImplementedException();
     }

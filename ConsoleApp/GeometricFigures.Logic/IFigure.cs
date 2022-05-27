@@ -2,5 +2,5 @@ namespace GeometricFigures.Logic;
 
 public interface IFigure
 {
-    decimal CalculateArea();
+    double CalculateArea();
 }

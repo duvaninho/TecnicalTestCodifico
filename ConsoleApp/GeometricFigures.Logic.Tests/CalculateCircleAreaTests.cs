@@ -7,7 +7,7 @@ public class CalculateCircleAreaTests
     [TestCase(100, 31415.93)]
     [TestCase(20, 1256.64)]
     [TestCase(3, 28.27)]
-    public void CalculateCircleArea(decimal areaExpected, decimal radius)
+    public void CalculateCircleArea(double radius, double areaExpected)
     {
         var circle = GivenCircleWithRadius(radius);
 
@@ -28,9 +28,9 @@ public class CalculateCircleAreaTests
         },
     };
     [TestCaseSource(nameof(_expectedMessages))]
-    public void CalculateAreaWhereInvalidArgument(decimal radius, string messageExpected)
+    public void CalculateAreaWhereInvalidArgument(double radius, string messageExpected)
     {
-        var circle = GivenCircleWithRadius(-1);
+        var circle = GivenCircleWithRadius(radius);
 
         var ex = Assert.Catch(() => WhenCalculatingCircleArea(circle));
 
@@ -40,19 +40,19 @@ public class CalculateCircleAreaTests
     {
         ex.Message.Should().Be(messageExpected);
     }
-    private static void ThenAreaMustBeLikeExpected(decimal areaExpected, decimal area)
+    private static void ThenAreaMustBeLikeExpected(double areaExpected, double area)
     {
         Round(area).Should().Be(Round(areaExpected));
     }
-    private static decimal Round(decimal area)
+    private static double Round(double area)
     {
         return Math.Round(area, Constants.Round);
     }
-    private static decimal WhenCalculatingCircleArea(IFigure circle)
+    private static double WhenCalculatingCircleArea(IFigure circle)
     {
         return circle.CalculateArea();
     }
-    private static IFigure GivenCircleWithRadius(decimal radius)
+    private static IFigure GivenCircleWithRadius(double radius)
     {
         return new Circle(radius: radius);
     }
