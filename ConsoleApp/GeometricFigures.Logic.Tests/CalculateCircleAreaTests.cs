@@ -32,9 +32,9 @@ public class CalculateCircleAreaTests
     {
         var ex = Assert.Catch(() =>GivenCircleWithRadius(radius));
 
-        ThenErrorMessageShouldBeLikeExepected(messageExpected, ex);
+        ThenErrorMessageShouldBeLikeExpected(messageExpected, ex);
     }
-    private static void ThenErrorMessageShouldBeLikeExepected(string messageExpected, Exception? ex)
+    private static void ThenErrorMessageShouldBeLikeExpected(string messageExpected, Exception? ex)
     {
         ex.Message.Should().Be(messageExpected);
     }
