@@ -36,7 +36,7 @@ namespace GeometricFigures.Logic {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GeometricFigures.Logic.DomainConstants", typeof(DomainConstants).Assembly);
@@ -51,7 +51,7 @@ namespace GeometricFigures.Logic {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -70,11 +70,29 @@ namespace GeometricFigures.Logic {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Rectangle with negative parameters can&apos;t be created.
+        /// </summary>
+        public static string MessageWhenNegativeRectangleParameters {
+            get {
+                return ResourceManager.GetString("MessageWhenNegativeRectangleParameters", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Circle with zer radius can&apos;t be created.
         /// </summary>
         public static string MessageWhenZeroRadius {
             get {
                 return ResourceManager.GetString("MessageWhenZeroRadius", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rectangle with zero parameters can&apos;t be created.
+        /// </summary>
+        public static string MessageWhenZeroRectangleParameters {
+            get {
+                return ResourceManager.GetString("MessageWhenZeroRectangleParameters", resourceCulture);
             }
         }
     }

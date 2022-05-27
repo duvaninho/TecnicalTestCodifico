@@ -24,4 +24,10 @@
     <data name="MessageWhenZeroRadius" xml:space="preserve">
         <value>Circle with zer radius can't be created</value>
     </data>
+    <data name="MessageWhenNegativeRectangleParameters" xml:space="preserve">
+        <value>Rectangle with negative parameters can't be created</value>
+    </data>
+    <data name="MessageWhenZeroRectangleParameters" xml:space="preserve">
+        <value>Rectangle with zero parameters can't be created</value>
+    </data>
 </root>
