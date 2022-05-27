@@ -2,6 +2,7 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=29bf6bcd_002Df9ef_002D4a3c_002D97a6_002D26c0e134812a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CalculateCircleAreaTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::4A7D2BB5-AAAE-4E78-A959-C54966CCADB9::net6.0::GeometricFigures.Logic.Tests.CalculateCircleAreaTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4A7D2BB5-AAAE-4E78-A959-C54966CCADB9::net6.0::GeometricFigures.Logic.Tests.CalculateRectangleAreaTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=978543bd_002Dc4c5_002D486b_002D9cb4_002D8aeda3968165/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CalculateCircleArea" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;

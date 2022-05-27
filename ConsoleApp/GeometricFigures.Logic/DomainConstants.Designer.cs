@@ -79,7 +79,7 @@ namespace GeometricFigures.Logic {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Circle with zer radius can&apos;t be created.
+        ///   Looks up a localized string similar to Circle with zero radius can&apos;t be created.
         /// </summary>
         public static string MessageWhenZeroRadius {
             get {
