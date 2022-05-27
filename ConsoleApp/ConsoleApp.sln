@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{45CFDD96-E157-41A2-931B-7EEB4C74DF87}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometricFigures.Logic", "GeometricFigures.Logic\GeometricFigures.Logic.csproj", "{B1865CF4-C1E3-4D06-9657-1AB51433CE03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometricFigures.Logic.Tests", "GeometricFigures.Logic.Tests\GeometricFigures.Logic.Tests.csproj", "{4A7D2BB5-AAAE-4E78-A959-C54966CCADB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{45CFDD96-E157-41A2-931B-7EEB4C74DF87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45CFDD96-E157-41A2-931B-7EEB4C74DF87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45CFDD96-E157-41A2-931B-7EEB4C74DF87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1865CF4-C1E3-4D06-9657-1AB51433CE03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1865CF4-C1E3-4D06-9657-1AB51433CE03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1865CF4-C1E3-4D06-9657-1AB51433CE03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1865CF4-C1E3-4D06-9657-1AB51433CE03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A7D2BB5-AAAE-4E78-A959-C54966CCADB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A7D2BB5-AAAE-4E78-A959-C54966CCADB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A7D2BB5-AAAE-4E78-A959-C54966CCADB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A7D2BB5-AAAE-4E78-A959-C54966CCADB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
