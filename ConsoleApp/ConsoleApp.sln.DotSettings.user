@@ -1,0 +1,19 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=29bf6bcd_002Df9ef_002D4a3c_002D97a6_002D26c0e134812a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CalculateCircleAreaTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4A7D2BB5-AAAE-4E78-A959-C54966CCADB9::net6.0::GeometricFigures.Logic.Tests.CalculateCircleAreaTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=978543bd_002Dc4c5_002D486b_002D9cb4_002D8aeda3968165/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CalculateCircleArea" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4A7D2BB5-AAAE-4E78-A959-C54966CCADB9::net6.0::GeometricFigures.Logic.Tests.CalculateCircleAreaTests.CalculateCircleArea&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=bbff29bb_002Da67f_002D4c52_002D8df3_002Da197a002016c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CalculateCircleAreaTests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4A7D2BB5-AAAE-4E78-A959-C54966CCADB9::net6.0::GeometricFigures.Logic.Tests.CalculateCircleAreaTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=GeometricFigures_002ELogic_002ETests_002FConstants/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=GeometricFigures_002ELogic_002FDomainConstants/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/Initialized/@EntryValue">True</s:Boolean></wpf:ResourceDictionary>
