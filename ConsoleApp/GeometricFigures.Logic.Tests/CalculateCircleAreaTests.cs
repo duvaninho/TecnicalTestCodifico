@@ -20,11 +20,11 @@ public class CalculateCircleAreaTests
     {
         new object[]
         {
-            -1M, DomainConstants.MessageWhenNegativeRadius
+            -1d, DomainConstants.MessageWhenNegativeRadius
         },
         new object[]
         {
-            0M, DomainConstants.MessageWhenZeroRadius
+            0d, DomainConstants.MessageWhenZeroRadius
         },
     };
     [TestCaseSource(nameof(_expectedMessages))]
