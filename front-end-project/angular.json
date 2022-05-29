@@ -29,7 +29,8 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/css/all.min.scss"
+              "src/assets/css/all.min.scss",
+              "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": []
           },

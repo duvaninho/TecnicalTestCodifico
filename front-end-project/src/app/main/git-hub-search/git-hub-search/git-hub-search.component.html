@@ -1,9 +1,9 @@
 <div class="finder">
   <h1>Find GitHub User</h1>
-  <div class="pseudo-search">
-    <input type="text">
-    <i class="fa fa-github"></i>
-    <button class="fa fa-search"></button>
-  </div>
+  <form [formGroup]="searchForm" (ngSubmit)="findGitHubUser()" class="pseudo-search">
+    <input formControlName="username" type="text">
+    <i class="fab fa-twitter"></i>
+    <button type="submit" class="fa fa-search" [disabled]="isSubmitting || searchForm.invalid"></button>
+  </form>
 </div>
-<app-card></app-card>
+<app-card *ngIf="user" [user]="user"></app-card>
